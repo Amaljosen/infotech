@@ -17,7 +17,7 @@ import { IoLogoBuffer } from "react-icons/io";
 
 const LandingPage = () => {
     const location=useLocation()
-  const [active,setActive]=useState("/home")
+  const [active,setActive]=useState("/")
   useEffect(()=>{
     setActive(location.pathname)
   },[location.pathname])
@@ -104,7 +104,7 @@ const LandingPage = () => {
         <div className='lg:w-9/12 lg:h-[95%] lg:p-5 lg:absolute lg:z-10 lg:top-6 lg:right-12 bg-gradient-to-b lg:bg-gradient-to-r from-white via-[#37B7C3] to-[#088395] lg:rounded-3xl h-full rounded-xl overflow-hidden'>
           <Navbar active={active}/>
           <div>
-          <div className={`${active==='/home'?"block":"hidden"}`}><Home/></div>
+          <div className={`${active==='/'?"block":"hidden"}`}><Home/></div>
           <div className={`${active==='/service'?"":"hidden"}`}><Service/></div>
           <div className={`${active==='/about'?"":"hidden"}`}><AboutUs/></div>
           <div className={`${active==='/contact'?"":"hidden"}`}><Contact/></div>
