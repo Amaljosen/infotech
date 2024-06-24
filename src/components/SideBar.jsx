@@ -10,7 +10,7 @@ const SideBar = ({ isOpen, setIsOpen }) => {
           <IoClose size={'40px'} onClick={() => setIsOpen(!isOpen)} />
         </div>
         <div className='flex flex-col space-y-16 text-2xl items-center w-full mt-10'>
-          <Link onClick={()=>{setIsOpen(false)}} to={'home'}>Home</Link>
+          <Link onClick={()=>{setIsOpen(false)}} to={'/'}>Home</Link>
           <Link onClick={()=>{setIsOpen(false)}} to={'service'}>Service</Link>
           <Link onClick={()=>{setIsOpen(false)}} to={'about'}>About Us</Link>
           <Link onClick={()=>{setIsOpen(false)}} to={'contact'}>Contact</Link>

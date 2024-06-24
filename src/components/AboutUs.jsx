@@ -20,8 +20,8 @@ const AboutUs = () => {
             <div className='lg:w-[55%] w-full'>
                 <div className='space-y-5 mt-5 lg:mt-0'>
                   <h1 className='text-2xl font-semibold text-blue-950 text-center lg:text-left'><span className='drop-shadow'>About Us</span> <hr className='lg:border-2 border-1 lg:w-[8%] w-[70%] mt-1 border-[#088395] mx-auto lg:mx-0'/></h1>
-                  <p className='opacity-65 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores animi ducimus voluptate accusamus autem nisi debitis, voluptatum eum provident iusto cum aperiam nihil pariatur impedit corrupti numquam optio ipsum consectetur perferendis. Necessitatibus adipisci blanditiis illum delectus. Sequi magni dolor iste delectus incidunt? Vitae eum error modi, veritatis iste incidunt odio.</p>
-                  <p className='opacity-65 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores animi ducimus voluptate accusamus autem nisi debitis, voluptatum eum provident iusto cum aperiam nihil pariatur impedit corrupti numquam optio ipsum consectetur perferendis. Necessitatibus adipisci blanditiis illum delectus. Sequi magni dolor iste delectus incidunt? Vitae eum error modi, veritatis iste incidunt odio.</p>
+                  <p className='opacity-65 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores animi ducimus voluptate accusamus autem nisi debitis, numquam optio ipsum consectetur perferendis. Necessitatibus adipisci blanditiis illum delectus. Sequi magni dolor iste delectus incidunt? Vitae eum error modi, veritatis iste incidunt odio.</p>
+                  <p className='opacity-65 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores animi ducimus voluptate accusamus autem nisi debitis, voluptatum eum provident iusto cum aperiam nihil pariatur impedit corrupti numquam optio ipsum consectetur perferendis. delectus incidunt? Vitae eum error modi, veritatis iste incidunt odio.</p>
 
                 </div>
             </div>
