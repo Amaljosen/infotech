@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import manImg from '../assets/about.jpg'
 import React from 'react'
 
 
@@ -9,13 +10,14 @@ const AboutUs = ({active}) => {
         <div className='lg:flex flex-row items-center lg:mt-10'>
         <div className='flex justify-center items-center lg:w-[40%] w-full relative pt-5 mx-auto'>
           <motion.div className='lg:w-64 w-[85%] lg:h-80 h-44 lg:border-4 border-2 border-[#088395] shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]' initial={{ opacity: 0,x:-100 }} animate={active ==='/about' ? { opacity: 1,x:0 } : {}} transition={{ duration: 0.5 }}></motion.div>
-          <motion.div className='lg:w-64 w-[85%] lg:h-80 h-44 absolute lg:top-0 ml-3 lg:ml-3 lg:left-5 top-1/2 left-1/2 transform lg:translate-x-0 lg:translate-y-0 -translate-x-1/2 -translate-y-1/2 shadow-md' initial={{ opacity: 0.7,y:-150 }} animate={active ==='/about' ? { opacity: 1,y:0 } : {}} transition={{ duration: 0.8 }}>
-            <img
-              src="https://img.freepik.com/free-photo/happy-male-entrepreneur-using-desktop-pc-while-working-office-there-are-people-background_637285-1037.jpg?t=st=1719224450~exp=1719228050~hmac=6689d0f8f7cb5bf9f6f8e0f11e2e1d90a6a125ab9eb56e3d8f7c2dc2dda43b03&w=1480" 
+          <div className='lg:w-64 w-[85%] lg:h-80 h-44 absolute lg:top-0 ml-3 lg:ml-3 lg:left-5 top-1/2 left-1/2 transform lg:translate-x-0 lg:translate-y-0 -translate-x-1/2 -translate-y-1/2'>
+            <motion.img
+              src={manImg}
               alt="" 
               className='object-cover h-full w-full shadow-md'
+              initial={{ opacity: 0.7,y:-150 }} animate={active ==='/about' ? { opacity: 1,y:0 } : {}} transition={{ duration: 0.8 }}
             />
-          </motion.div>
+          </div>
 </div>
 
 

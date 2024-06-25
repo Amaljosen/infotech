@@ -1,5 +1,5 @@
 import React from 'react'
-import img from './contact.png'
+import img from '../assets/contact.png'
 import { motion } from 'framer-motion'
 
 

@@ -29,7 +29,7 @@ const LandingPage = () => {
   return (
     <div className=''>
            
-         <div className=' bg-blue-950 h-screen w-screen relative overflow-hidden' id="particle-container">
+         <div className=' bg-[#0a1f44] h-screen w-screen relative overflow-hidden' id="particle-container">
 
 
         <div className='h-full w-full hidden lg:block'>
@@ -49,7 +49,7 @@ const LandingPage = () => {
             <p className='opacity-45 text-sm'>Lorem ipsum dolor sit amet.</p></div>
             </div> */}
 
-            <Link to={'contact'}><motion.div className='relative z-20 bg-blue-950 h-fit w-fit p-4 rounded-full' initial={{ x: 300 }} animate={{ x: 0 }} transition={{ duration: 0.2, delay: 0.2 }}>
+            <Link to={'contact'}><motion.div className='relative z-20 bg-[#0a1f44] h-fit w-fit p-4 rounded-full' initial={{ x: 300 }} animate={{ x: 0 }} transition={{ duration: 0.2, delay: 0.2 }}>
                 <button className='border-white border-2 w-48 h-14 rounded-full shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]'>Need Help ?</button>
             </motion.div></Link>
 
@@ -70,14 +70,14 @@ const LandingPage = () => {
                 </div>
                 </motion.div>
 
-                <motion.div className=' relative z-20 bg-blue-950 p-4 w-fit rounded-full ' initial={{  y: 80 }} animate={{ y: 0 }} transition={{ duration: 0.5, delay: 0.5 }}>    
+                <motion.div className=' relative z-20 bg-[#0a1f44] p-4 w-fit rounded-full ' initial={{  y: 80 }} animate={{ y: 0 }} transition={{ duration: 0.5, delay: 0.5 }}>    
                 <Link to={'/contact'}><button className='  border-2 border-white rounded-full flex items-center shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]'>
 
                     <div className='flex items-center w-[27rem] h-14 justify-center'>
                     <div className=''>Lets Transfer Your Digital̉ Presents</div>
                     </div>
 
-                    <div className='bg-white rounded-full p-3 mr-3 text-black shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]'> <GiFastArrow  className='-rotate-45 text-blue-950'/></div>
+                    <div className='bg-white rounded-full p-3 mr-3 text-black shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]'> <GiFastArrow  className='-rotate-45 text-[#0a1f44]'/></div>
                 </button></Link>
                 </motion.div>
             </div>
