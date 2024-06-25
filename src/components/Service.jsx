@@ -13,7 +13,7 @@ const Service = () => {
         <img src="https://img.freepik.com/free-photo/happy-businesswoman-giving-presentation-natural-resources-his-colleagues_23-2147826560.jpg?t=st=1718339461~exp=1718343061~hmac=2b19eaa84d7ad9f8f05a7ad606b1738760d601465ed1a97bd688c32f5231ae94&w=1800" className='object-cover w-screen h-screen' alt="" />
        </div> */}
 
-       <div className='text-black relative z-20 lg:mt-10 mt-3 lg:space-y-4 space-y-2 mx-3 lg:mx-0 '>
+       <div className='text-black relative z-20 lg:mt-10 mt-2 lg:space-y-4 space-y-2 mx-3 lg:mx-0 '>
          <div className='bg-gray-50 bg-opacity-5 shadow-md p-4 rounded-xl space-y-2 '>
               <h1 className='text-2xl font-semibold text-sky-900'>Our Service</h1>
               <p className='opacity-65 text-sm'>At WebZspot, we help you build and grow your brand online. Whether you need a new logo, or web designs like UI,UX for a website, we have you covered.</p>

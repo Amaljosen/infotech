@@ -6,12 +6,12 @@ const AboutUs = () => {
 
         <div className='lg:flex flex-row items-center lg:mt-10'>
         <div className='flex justify-center items-center lg:w-[40%] w-full relative pt-5 mx-auto'>
-          <div className='lg:w-64 w-[85%] lg:h-80 h-44 lg:border-4 border-2 border-[#088395]'></div>
-          <div className='lg:w-64 w-[85%] lg:h-80 h-44 absolute lg:top-0 ml-3 lg:ml-3 lg:left-5 top-1/2 left-1/2 transform lg:translate-x-0 lg:translate-y-0 -translate-x-1/2 -translate-y-1/2 shadow'>
+          <div className='lg:w-64 w-[85%] lg:h-80 h-44 lg:border-4 border-2 border-[#088395] shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]'></div>
+          <div className='lg:w-64 w-[85%] lg:h-80 h-44 absolute lg:top-0 ml-3 lg:ml-3 lg:left-5 top-1/2 left-1/2 transform lg:translate-x-0 lg:translate-y-0 -translate-x-1/2 -translate-y-1/2 shadow-md'>
             <img
               src="https://img.freepik.com/free-photo/happy-male-entrepreneur-using-desktop-pc-while-working-office-there-are-people-background_637285-1037.jpg?t=st=1719224450~exp=1719228050~hmac=6689d0f8f7cb5bf9f6f8e0f11e2e1d90a6a125ab9eb56e3d8f7c2dc2dda43b03&w=1480" 
               alt="" 
-              className='object-cover h-full w-full'
+              className='object-cover h-full w-full shadow-md'
             />
           </div>
 </div>

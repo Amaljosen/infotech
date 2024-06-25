@@ -13,6 +13,9 @@ import Contact from './components/Contact';
 
 
 import { IoLogoBuffer } from "react-icons/io";
+import { motion } from 'framer-motion';
+
+
 
 
 
@@ -35,10 +38,10 @@ const LandingPage = () => {
 
         <div className='flex w-full justify-between'>
 
-            <div className='flex py-5 px-7 text-center space-x-1'>
+            <motion.div className='flex py-5 px-7 text-center space-x-1' initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.2, delay: 0.2 }}>
             <h1 className='text-5xl writing-mode-vertical font-medium'>Info Tech</h1>
             <p className='text-2xl opacity-45 writing-mode-vertical'>Digital Agencies</p>
-            </div> 
+            </motion.div> 
 
             {/* <div className='my-12 mx-7 flex items-start'>
             <IoLogoBuffer size={'2.5rem'} />
@@ -46,15 +49,15 @@ const LandingPage = () => {
             <p className='opacity-45 text-sm'>Lorem ipsum dolor sit amet.</p></div>
             </div> */}
 
-            <Link to={'contact'}><div className='relative z-20 bg-blue-950 h-fit w-fit p-4 rounded-full'>
+            <Link to={'contact'}><motion.div className='relative z-20 bg-blue-950 h-fit w-fit p-4 rounded-full' initial={{ x: 300 }} animate={{ x: 0 }} transition={{ duration: 0.2, delay: 0.2 }}>
                 <button className='border-white border-2 w-48 h-14 rounded-full shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]'>Need Help ?</button>
-            </div></Link>
+            </motion.div></Link>
 
         </div>
 
             <div className='mt-auto'>
 
-                <div className='py-5 px-7 space-y-4'>
+                <motion.div className='py-5 px-7 space-y-4' initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: 0.4 }}>
                 <div className='w-[17%] space-y-2'>
                 <h2 className='font-medium'>Follow Us</h2>
                 <p className='opacity-65 text-base'>Thank you for visiting my personal portfolio website. Connect with me over socials.</p>
@@ -65,9 +68,9 @@ const LandingPage = () => {
                 <a href="#" target="_blank"><LuFacebook /></a>
                 <a href="#" target="_blank"><SlSocialLinkedin /></a>
                 </div>
-                </div>
+                </motion.div>
 
-                <div className=' relative z-20 bg-blue-950 p-4 w-fit rounded-full '>    
+                <motion.div className=' relative z-20 bg-blue-950 p-4 w-fit rounded-full ' initial={{  y: 80 }} animate={{ y: 0 }} transition={{ duration: 0.5, delay: 0.5 }}>    
                 <Link to={'/contact'}><button className='  border-2 border-white rounded-full flex items-center shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]'>
 
                     <div className='flex items-center w-[27rem] h-14 justify-center'>
@@ -76,7 +79,7 @@ const LandingPage = () => {
 
                     <div className='bg-white rounded-full p-3 mr-3 text-black shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]'> <GiFastArrow  className='-rotate-45 text-blue-950'/></div>
                 </button></Link>
-                </div>
+                </motion.div>
             </div>
 
             </div>
@@ -102,7 +105,7 @@ const LandingPage = () => {
         {/*........... FOR Mobile View Section END ............*/}
 
 
-        <div className='lg:w-9/12 lg:h-[95%] lg:p-5 lg:absolute lg:z-10 lg:top-6 lg:right-12 bg-gradient-to-b lg:bg-gradient-to-r from-white via-[#37B7C3] to-[#088395] lg:rounded-3xl h-full rounded-xl overflow-hidden shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]'>
+        <div className='lg:w-9/12 lg:h-[95%] lg:p-5 lg:absolute lg:z-10 lg:top-6 lg:right-12 bg-gradient-to-b lg:bg-gradient-to-r from-white via-[#37B7C3] to-[#088395] lg:rounded-3xl h-full rounded-xl overflow-hidden shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)] animate-gradient bg-[length:150%_150%]'>
           <Navbar active={active}/>
           <div>
           <div className={`${active==='/'?"block":"hidden"}`}><Home/></div>
@@ -111,7 +114,7 @@ const LandingPage = () => {
           <div className={`${active==='/contact'?"":"hidden"}`}><Contact/></div>
           </div>
         </div>
-
+          
         </div>
 
 
