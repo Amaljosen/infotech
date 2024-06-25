@@ -9,12 +9,12 @@ const Navbar = ({active}) => {
     const [isOpen,setIsOpen]=useState(false)
   return (
     <div>
-    <div className='w-2/3 lg:flex justify-center rounded-full p-4 hidden text-white bg-blue-950 shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)] relative z-10'>
+    <div className='w-2/3 lg:flex justify-center rounded-full p-4 hidden text-blue-950  shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)] relative z-10'>
       <div className='flex space-x-1'>
-        <Link to={'/'} className={` hover:bg-[#37B7C3] hover:font-medium cursor-pointer rounded-full transition-all duration-500 px-10 py-2 ${active==='/'?"font-semibold bg-[#37B7C3] shadow-lg":""}`}>Home</Link>
-        <Link to={'/service'} className={` hover:bg-[#37B7C3] hover:font-medium cursor-pointer rounded-full transition-all duration-500 px-10 py-2 ${active==='/service'?"font-semibold bg-[#37B7C3] shadow-lg":""}`}>Service</Link>
-        <Link to={'/about'} className={` hover:bg-[#37B7C3] hover:font-medium cursor-pointer rounded-full transition-all duration-500 px-10 py-2 ${active==='/about'?"font-semibold bg-[#37B7C3] shadow-lg":""}`}>About</Link>
-        <Link to={'/contact'} className={` hover:bg-[#37B7C3] hover:font-medium cursor-pointer rounded-full transition-all duration-500 px-10 py-2 ${active==='/contact'?"font-semibold bg-[#37B7C3] shadow-lg":""}`}>Contact</Link>
+        <Link to={'/'} className={` hover:bg-blue-950 hover:text-white hover:font-medium cursor-pointer rounded-full transition-all duration-500 px-10 py-2 ${active==='/'?"font-semibold text-white bg-blue-950 shadow-lg":""}`}>Home</Link>
+        <Link to={'/service'} className={` hover:bg-blue-950 hover:text-white hover:font-medium cursor-pointer rounded-full transition-all duration-500 px-10 py-2 ${active==='/service'?"font-semibold text-white bg-blue-950 shadow-lg":""}`}>Service</Link>
+        <Link to={'/about'} className={` hover:bg-blue-950 hover:text-white hover:font-medium cursor-pointer rounded-full transition-all duration-500 px-10 py-2 ${active==='/about'?"font-semibold text-white bg-blue-950 shadow-lg":""}`}>About</Link>
+        <Link to={'/contact'} className={` hover:bg-blue-950 hover:text-white hover:font-medium cursor-pointer rounded-full transition-all duration-500 px-10 py-2 ${active==='/contact'?"font-semibold text-white bg-blue-950 shadow-lg":""}`}>Contact</Link>
       </div>
     </div>
 

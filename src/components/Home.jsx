@@ -28,14 +28,14 @@ export default function Home() {
 
     <div className='flex lg:justify-end lg:items-end mt-5 lg:mt-0'>
     <div className='lg:w-[60%] w-full space-y-3'>
-        <div className='space-y-2 p-5 rounded-3xl backdrop-blur-lg shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] hidden lg:block'>
+        <div className='space-y-2 p-5 rounded-3xl backdrop-blur-lg shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)] hidden lg:block'>
                 <h1 className='lg:text-xl text-lg font-medium text-blue-950'>
                 WHAT WE DO ?
                 </h1>
                 <p className='opacity-60 text-sm'>From web design and development to doital market strategies. we craft tailored solutions to drive your online success.</p>
         </div>
 
-        <div className=' p-3 rounded-3xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]'>
+        <div className=' p-3 rounded-3xl shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]'>
             <div>
         <div className='flex items-center'>
             <img className='w-14 h-14 object-cover border border-white rounded-full relative' src="https://t4.ftcdn.net/jpg/07/20/84/95/240_F_720849524_1ydl2i0nO1ktoW4weJt7vvwRYTT5bCLj.jpghttps://t3.ftcdn.net/jpg/07/02/76/90/240_F_702769099_jS0PvHVjUQE0j09uROSijrAdr7EQTXHJ.jpg" alt=""/>
