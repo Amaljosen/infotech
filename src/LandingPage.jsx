@@ -21,10 +21,10 @@ import { motion } from 'framer-motion';
 
 const LandingPage = () => {
     const location=useLocation()
-  const [active,setActive]=useState("/")
-  useEffect(()=>{
-    setActive(location.pathname)
-  },[location.pathname])
+    const [active,setActive]=useState("/")
+    useEffect(()=>{
+      setActive(location.pathname)
+    },[location.pathname])
 
   return (
     <div className=''>
@@ -108,10 +108,10 @@ const LandingPage = () => {
         <div className='lg:w-9/12 lg:h-[95%] lg:p-5 lg:absolute lg:z-10 lg:top-6 lg:right-12 bg-gradient-to-b lg:bg-gradient-to-r from-white via-[#37B7C3] to-[#088395] lg:rounded-3xl h-full rounded-xl overflow-hidden shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)] animate-gradient bg-[length:150%_150%]'>
           <Navbar active={active}/>
           <div>
-          <div className={`${active==='/'?"block":"hidden"}`}><Home/></div>
-          <div className={`${active==='/service'?"":"hidden"}`}><Service/></div>
-          <div className={`${active==='/about'?"":"hidden"}`}><AboutUs/></div>
-          <div className={`${active==='/contact'?"":"hidden"}`}><Contact/></div>
+          <div className={`${active==='/'?"block":"hidden"}`}><Home active={active}/></div>
+          <div className={`${active==='/service'?"":"hidden"}`}><Service active={active}/></div>
+          <div className={`${active==='/about'?"":"hidden"}`}><AboutUs active={active}/></div>
+          <div className={`${active==='/contact'?"":"hidden"}`}><Contact active={active}/></div>
           </div>
         </div>
           

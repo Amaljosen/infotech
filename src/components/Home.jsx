@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 
 
-export default function Home() {
+export default function Home({active}) {
   return (
 
     <div className='flex flex-col lg:flex-row p-5'>
@@ -17,26 +17,26 @@ export default function Home() {
         <img src="https://img.freepik.com/free-photo/happy-businesswoman-giving-presentation-natural-resources-his-colleagues_23-2147826560.jpg?t=st=1718339461~exp=1718343061~hmac=2b19eaa84d7ad9f8f05a7ad606b1738760d601465ed1a97bd688c32f5231ae94&w=1800" className='object-cover w-screen h-screen' alt="" />
        </div>  */}
 
-<motion.div className='lg:w-[70%] w-full lg:pb-28' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-      <motion.div className='space-y-5 mt-10' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.5 }}>
-        <motion.h1 className='text-5xl lg:text-7xl font-semibold text-blue-950' initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.5, duration: 0.5 }}>
+<motion.div className='lg:w-[70%] w-full lg:pb-28' initial={{ opacity: 0 }} animate={active ==='/' ? { opacity: 1, } : {}} transition={{ duration: 0.5 }}>
+      <motion.div className='space-y-5 mt-10' initial={{ opacity: 0 }} animate={active ==='/' ? { opacity: 1, } : {}} transition={{ delay: 0.5, duration: 0.5 }}>
+        <motion.h1 className='text-5xl lg:text-7xl font-semibold text-blue-950' initial={{ y: -50, opacity: 0 }} animate={active ==='/' ? { opacity: 1,y:0 } : {}} transition={{ delay: 0.5, duration: 0.5 }}>
           <motion.p className='drop-shadow-md'>WE</motion.p>
           <motion.p className='drop-shadow-md'>BUILD</motion.p>
           <motion.p className='drop-shadow-md'>DIGITAL</motion.p>
         </motion.h1>
-        <motion.p className='opacity-60' initial={{ opacity: 0,x:-120 }} animate={{ opacity: 1,x:0 }} transition={{ delay: 0.6, duration: 0.6 }}>
+        <motion.p className='opacity-60' initial={{ opacity: 0,x:-120 }} animate={active ==='/' ? { opacity: 1,x:0 } : {}} transition={{ delay: 0.6, duration: 0.6 }}>
           From web design and development to digital marketing strategies, we craft tailored solutions to drive your online success.
         </motion.p>
         
         <motion.div className='border-blue-950 border-4 w-full h-5 rounded-full relative overflow-hidden shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]' initial={{ opacity: 0 ,x:-160 }} animate={{ opacity: 1,x:0 }} transition={{ delay: 0.8, duration: 0.8 }}>
-          <motion.div className='absolute -top-3 animate-move' initial={{ x: '-100%' }} animate={{ x: '100%' }} transition={{ repeat: Infinity, duration: 2, repeatDelay: 0.5, ease: 'linear' }}>
+          <motion.div className='absolute -top-3 animate-move' initial={{ x: '-100%' }} animate={active ==='/' ? { opacity: 1,x:'100%' } : {}} transition={{ repeat: Infinity, duration: 2, repeatDelay: 0.5, ease: 'linear' }}>
             <div className='h-3 w-4 mt-3 rounded-full shadow-xl bg-blue-950'></div>
           </motion.div>
         </motion.div>
       </motion.div>
     </motion.div>
 
-    <motion.div className='flex lg:justify-end lg:items-end mt-5 lg:mt-0' initial={{ opacity: 0,marginTop:'500px' }} animate={{ opacity: 1 ,marginTop:'0px'}} transition={{ duration: 2 }}>
+    <motion.div className='flex lg:justify-end lg:items-end mt-5 lg:mt-0' initial={{ opacity: 0,marginTop:'500px' }} animate={active ==='/' ? { opacity: 1,marginTop:0 } : {}} transition={{ duration: 2 }}>
     <div className='lg:w-[60%] w-full space-y-3'>
         <div className='space-y-2 p-5 rounded-3xl backdrop-blur-lg shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)] hidden lg:block'>
                 <h1 className='lg:text-xl text-lg font-medium text-blue-950'>
